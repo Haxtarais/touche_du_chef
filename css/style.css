@@ -1,0 +1,391 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+:root{
+    --main-bgc: linear-gradient(80deg, #5e0606 35%, #AB0303, #C20303);
+    --sec-col: #FEA628;
+    --text-col: #AB0303;
+}
+body{
+    background: var(--main-bgc);
+}
+body h1{
+    font-family: "Della Respira", serif;
+}
+header{
+    width: 100%;
+    height: 50px;
+    background-color: #5e0606;
+    padding: 0 40px;
+    z-index: 100;
+    position: sticky;
+    top: 0;
+}
+#logo{
+    font-family: "Kaushan Script", cursive;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.4em;
+}
+header ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 8px 12px;
+}
+header ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 18px;
+    transition: all 0.5s ease;
+}
+header li a:hover, #logo:hover{
+    color: var(--sec-col);
+}
+header .contact:hover{
+    color: var(--sec-col);
+} 
+nav{
+    display: flex;
+}
+.container-head{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 8px;
+}
+.container-head .menu_toggle{
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+.drop_down{
+    display: none;
+}
+.contact{
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.5s ease;
+}
+.sect1, .sect2, .sect5{
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+    //background-color: #fff;
+}
+.sect1 p{
+    font-size: 1.2em;
+}
+.description{
+    width: 50%;
+    position: relative;
+    top: 20%;
+    line-height: 1.3;
+    box-sizing: border-box;
+    //background-color: #fff;
+    float: left;
+}
+.description h1{
+    margin-bottom: 10px;
+}
+.cheese-burger-float img{
+    width: 50%;
+    height: 50%;
+    float: right;
+}
+.btn{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 140px;
+    height: 30px;
+    background-color: #fff;
+    overflow: hidden;
+    box-sizing: border-box;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.arrow{
+    width: 15px;
+    height: 30px;
+    background-color: var(--sec-col);
+    
+}
+.btn h3{
+    color: var(--text-col);
+    padding: 3px;
+
+}
+section .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //background-color: #fff;
+}
+.container-menu .item{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    margin: 15px;
+    padding: 8px;
+    box-shadow: #2c2b2b 0px 0px 3px;
+    background-color: var(--text-col);
+}
+.container-menu .item p{
+    flex-basis: 50%;
+}
+.list-img{
+    fill: #fff;
+    width: 30px;
+    margin-right: -30px;
+}
+.head-color{
+    color: var(--sec-col);
+}
+.sect2 h1, .sect3 h1, .sect4 h1{
+    margin-bottom: 10px;
+    text-decoration: underline overline;
+}
+.container-cat{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ;
+}
+.item-cat{
+    width: 460px;
+    height: 240px;
+    margin: 20px;
+    border-radius: 15px;
+    opacity: 0.7;
+    border: 8px solid #AB0303;
+}
+.item-cat p{
+    font-size: 3em;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    top: 30%;
+}
+.item-cat:hover{
+    opacity: 1;
+}
+.container-cat .left{
+    background: url(../img/3049.jpg) no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+.container-cat .right{
+    background: url(../img/19813.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+.sect4{
+    margin-top: 8%;
+}
+.container-plat{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 240px;
+    margin: 20px;
+    box-sizing: border-box;
+}
+.sect4 .item-plat{
+    width: 24%;
+    height: auto;
+    background: #BD0402;
+    text-align: center;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.item-plat > img{
+    width: 8rem;
+    height: 8rem;
+    display: block;
+    margin: auto;
+}
+.item-plat .price{
+    float: left;
+    position: relative;
+    left: 26px;
+    top: 22px;
+    color: var(--sec-col);
+}
+.chariot{
+    width: 28%;
+    height:20%;
+    background: var(--sec-col);
+    position: relative;
+    top: 22px;
+    left: 72%;
+    border-radius: 50% 0 0 0;
+}
+.chariot svg{
+    width: 28px;
+    height: 28px;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: -13px;
+    fill: #fff;
+    transition: all 0.5s ease;
+}
+.chariot svg:hover{
+    fill: var(--text-col)
+}
+.sect5{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sect5 > img{
+    width: 40%;
+}
+.sect5 .descr-about{
+    font-size: 1.1em;
+}
+.sect5 .descr-about h1{
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+footer{
+    width: 100%;
+    height: 55vh;
+    padding: 5%;
+    background-color: #341010;
+}
+footer h5, h6{
+    text-align: center;
+    margin: 8px 0;
+}
+footer .info-footer{
+    display: flex;
+    justify-content: start;
+    margin-bottom: 25px;
+}
+footer .horaire{
+    margin-right: 5%;
+}
+footer .horaire li{
+    list-style-type: circle;
+}
+.info-footer div > h4{
+    color: var(--sec-col);
+    margin: 10px 0;
+}
+.info-footer li{
+    list-style-type: none;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+.footer-logo{
+    margin-top: 50px;
+    position: absolute;
+    right: 15%;
+    font-size: 2em;
+}
+.autoshow{
+    animation: text-appear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 100vh;
+}
+.imageReveal{
+    animation: imageReveal both;
+    animation-timeline: view(80% 20%);
+}
+@keyframes text-appear{
+    from{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes imageReveal {
+    from{
+        filter: saturate(0) contrast(4) brightness(.1) blur(5px);
+        opacity: 0;
+        scale: .95;
+        translate: 0 4rem;
+    }
+    to{
+        filter: none;
+        opacity: 1;
+        scale: 1;
+        translate: 0 0;
+    }
+}
+    /*Contact_page*/
+.info-contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 30px;
+}
+.address p{
+    line-height: 1.5;
+}
+.address a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.address a:hover{
+    text-decoration: underline;
+}
+.info-contact .container-form{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    height: 500px;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.container-form h2{
+    text-align: center;
+    margin: 10px 0;
+}
+input{
+    padding: 4px;
+    margin: 3px 0;
+    width: 48%;
+    height: 25px;
+    border: none;
+    color: #000;
+    box-sizing: border-box;
+}
+input[type="submit"]{
+    width: 97%;
+    height: 35px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+    background-color: #d7cbcb;
+    transition: all .5s ease-in;
+}
+input[type="submit"]:hover{
+    background-color: #f4e9e9;
+    color: var(--text-col);
+    box-shadow: 0 0 4px #fff;
+}
+input[type="submit"]:active{
+    background-color: #1eea4d;
+    color: #fff;
+}
+textarea{
+    margin: 3px auto;
+    padding: 10px;
+    width: 97%;
+    height: 250px;
+    color: #000;
+    font-size: .90rem;
+}

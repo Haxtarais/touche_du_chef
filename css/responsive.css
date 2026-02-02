@@ -1,0 +1,146 @@
+@media screen and (min-width: 824px){
+    .chariot{
+        top: 42px;
+    }
+}
+    /*Tablet_screen: 768px-991px*/
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .container-cat{
+        flex-flow: column nowrap
+    }
+    .cheese-burger-float img{
+        margin-top: 8%
+    }
+    .footer-logo{
+        right: 8%;
+        font-size: 1.5em;
+    }
+}
+    /*Small_devices_screen: max-width 575px*/
+@media (max-width: 575px){
+    header{
+        height: 70px;
+        position: sticky;
+        top: 0;
+    }
+    #logo{
+        margin: 5px auto;
+        font-size: 1.8em;
+    }
+    nav, .contact{
+        display: none;
+    }
+    .container-head .menu_toggle{
+        display: block;
+    }
+    .sect1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        order: 0;
+        margin: 0;
+        padding: 0;
+    }
+    .description{
+        width: 100%;
+        order: 1;
+        position: relative;
+        top: -80px;
+        text-align: center;
+        margin-left: 20px;
+    }
+    .cheese-burger-float img{
+        width: 90%;
+        height: 90%;
+        margin: 0;
+        padding: 0;
+    }
+    .btn{
+        margin: 18px auto;
+    }
+    .btn h3{
+        padding: 4px 10px;
+    }
+    .sect2{
+        height: 140vh;
+    }
+    .container-menu .item h3{
+        font-size: 2em;
+    }
+    .container-menu .item p{
+        font-size: 1.5em;
+    }
+    .container-cat{
+        justify-content: center;
+    }
+    .container-plat{
+        flex-flow: column nowrap;
+        height: auto;
+    }
+    .sect4 .item-plat{
+        width: 80%;
+        height: 380px;
+        margin: 6px auto;
+    }
+    .item-plat > img{
+        width: 12rem;
+        height: 12rem;
+    }
+    .item-plat > h3, h2.price{
+        font-size: 2em;
+    }
+    .chariot{
+        top: 18%;
+        height: 22%;
+    }
+    .chariot svg{
+        width: 50px;
+        height: 50px;
+    }
+    .sect5{
+        height: auto;
+        flex-flow: column nowrap;
+    }
+    .sect5 > img{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .sect5 .descr-about{
+        font-size: 1.4em;
+        margin: 0 8px;
+        //padding-bottom: 30%;
+        position: relative;
+        top: -140px;
+    }
+    .descr-about .btn{
+        display: none;
+    }
+    footer{
+        height: auto;
+    }
+    .info-footer{
+        flex-flow: row wrap;
+        justify-content: center;
+        flex-basis: 100%;
+        margin: 0 5px;
+    }
+    footer .horaire, footer .contact{
+        margin: 0;
+        width: 40%;
+        display: inline;
+    }
+    .footer-logo{
+        position: static;
+        margin-left: 10%;
+        font-size: 1.4em;
+    }
+    footer h5, h6{
+        font-size: 18px;
+    }
+    .address{
+        width: 60%;
+        text-wrap: wrap;
+    }
+}
