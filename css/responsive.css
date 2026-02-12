@@ -5,6 +5,7 @@
 }
     /*Tablet_screen: 768px-991px*/
 @media screen and (min-width: 768px) and (max-width: 991px){
+    .header{background: yellow;}
     .container-cat{
         flex-flow: column nowrap
     }
@@ -22,7 +23,6 @@
         height: 70px;
         position: sticky;
         top: 0;
-        background: yellow;
     }
     #logo{
         margin: 5px auto;
@@ -146,3 +146,4 @@
     }
 
 }
+
